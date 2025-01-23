@@ -1,7 +1,0 @@
-class MyExam:
-    def __init__(self):
-        print("Конструктор викликано!")
-
-obj = MyExam()
-
-print(f"Створено клас {MyExam} та об'єкт класу {obj}")
