@@ -1,23 +1,19 @@
 class MyClass:
+
+        name (str):
+        value (int):
     
+        display_info():
+    
+    def __init__(self, name, value):
+        self.name = name
+        self.value = value
 
-    attribute1 : str
-    attribute2 : int
+    def display_info(self):
+        print(f"Ім'я: {self.name}, Значення: {self.value}")
 
-    __init__(self, attribute1, attribute2):
-    get_info(self):
-
-    def __init__(self, attribute1, attribute2):
-
-        attribute1 : str
-        attribute2 : int
-        self.attribute1 = attribute1
-        self.attribute2 = attribute2
-
-    def get_info(self):
-
-        str
-        return f"Attribute 1: {self.attribute1}, Attribute 2: {self.attribute2}"
-
+obj = MyClass("Example", 42)
 
 print(MyClass.__doc__)
+
+obj.display_info()
